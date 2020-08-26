@@ -3,9 +3,17 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>To Do List </h1>
-     
+    <div className="main_div">
+      <div className="center_div">
+      <br/>
+        <h1>ToDO List </h1>
+      <br/>
+        <input type="text" placeholder="Add a item" />
+        <button > + </button>  
+        <ol>
+          <li>buy apple</li>
+        </ol>
+      </div>
     </div>
   );
 }
