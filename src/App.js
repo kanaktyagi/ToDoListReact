@@ -12,6 +12,7 @@ function App() {
     setItems((oldItems)=> {
       return [...oldItems, inputList]
     })
+    setInputList('')
   }
   return (
     <div className="main_div">
@@ -19,7 +20,7 @@ function App() {
       <br/>
         <h1>ToDO List </h1>
       <br/>
-        <input type="text" placeholder="Add a item" onChange={itemEvent} />
+        <input type="text" placeholder="Add a item" onChange={itemEvent} value={inputList} />
         <button  onClick={listOfItems}> + </button>  
         <ol>
          {
